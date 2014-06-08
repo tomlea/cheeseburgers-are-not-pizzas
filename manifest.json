@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Cheeseburgers are not pizzas",
+  "description": "This extension trys to stop you being tricked into ordering a cheeseburger pizza at pizza hut",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.pizzahut.co.uk/*"],
+      "js": ["jquery.js", "script.js"]
+    }
+  ],
+
+  "icons": {
+    "48" : "icon-48.png",
+    "64" : "icon-64.png",
+    "128" : "icon-128.png",
+    "256" : "icon-256.png",
+    "512" : "icon-512.png"
+  }
+}
+
